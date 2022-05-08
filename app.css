@@ -1,0 +1,41 @@
+body {
+  background-color: #345;
+}
+
+.container {
+  margin: 10px;
+  border: 1px solid #456;
+  padding: 5px;
+}
+
+.editor {
+  border: 1px solid #567;
+  min-height: 200px;
+  margin-bottom: 10px;
+  position: relative;
+}
+#html-code,
+#css-code,
+#html-code-highlighted {
+  width: 47%;
+  height: 400px;
+  background-color: transparent;
+  padding: 10px;
+  display: block;
+  background-color: white;
+}
+
+#html-code-highlighted {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+.window {
+  border: 1px solid #567;
+  min-height: 200px;
+  padding: 10px;
+  color: white;
+}
+.window * {
+  color: white;
+}

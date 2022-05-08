@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Custom code editor</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/default.min.css"
+      integrity="sha512-hasIneQUHlh06VNBe7f6ZcHmeRTLIaQWFd43YriJ0UND19bvYRauxthDg8E4eVNPm9bRUhr5JGeqH7FRFXQu5g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="app.css" />
+    <style id="head-styles"></style>
+  </head>
+  <body>
+    <!---
+    JS:
+    working with DOM
+    functions
+    event handling in DOM
+    dynamic styling
+    -->
+    <div class="container">
+      <div class="editor">
+        <textarea
+          id="html-code"
+          placeholder="html code ...."
+          onkeyup="onHtmlCodeChange()"
+          onblur="deactivateEditing()"
+        ></textarea>
+        <pre><code id="html-code-highlighted" onclick="activateEditing()"></code></pre>
+        <textarea
+          id="css-code"
+          placeholder="css code ...."
+          onkeyup="onCssCodeChange()"
+        ></textarea>
+      </div>
+      <div id="result" class="window"></div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"
+      integrity="sha512-yUUc0qWm2rhM7X0EFe82LNnv2moqArj5nro/w1bi05A09hRVeIZbN6jlMoyu0+4I/Bu4Ck/85JQIU82T82M28w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
